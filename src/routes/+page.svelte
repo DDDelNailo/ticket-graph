@@ -34,8 +34,4 @@
   main {
     min-height: 100vh;
   }
-
-  section {
-    padding: 24px;
-  }
 </style>
