@@ -20,18 +20,3 @@
     {/if}
   </section>
 </main>
-
-<style>
-  :global(html, body) {
-    margin: 0;
-    min-height: 100%;
-  }
-
-  :global(body) {
-    font-family: system-ui, sans-serif;
-  }
-
-  main {
-    min-height: 100vh;
-  }
-</style>

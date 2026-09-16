@@ -38,22 +38,27 @@
   .tools {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    padding: 8px;
-    border-right: 1px solid #ccc;
+    gap: var(--space-xs);
+    padding: var(--space-sm);
+    border-right: var(--border-thin);
   }
 
   .tools button {
     width: 48px;
     height: 48px;
-    padding: 4px;
+    padding: var(--space-xs);
     border: 0;
-    border-radius: 6px;
+    border-radius: var(--radius-md);
     background: transparent;
+    color: var(--color-text);
     cursor: pointer;
   }
 
+  .tools button:hover {
+    background: var(--color-surface-hover);
+  }
+
   .tools button.active {
-    background: #ddd;
+    background: var(--color-surface-active);
   }
 </style>

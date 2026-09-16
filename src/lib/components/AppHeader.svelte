@@ -32,8 +32,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 20px;
-    border-bottom: 1px solid #ccc;
+    padding: var(--space-md) var(--space-lg);
+    border-bottom: var(--border-simple);
   }
 
   h1 {
@@ -43,18 +43,23 @@
 
   nav {
     display: flex;
-    gap: 4px;
+    gap: var(--space-xs);
   }
 
   button {
-    padding: 8px 14px;
+    padding: var(--space-sm) 14px;
     border: 0;
-    border-radius: 6px;
+    border-radius: var(--radius-md);
     background: transparent;
+    color: var(--color-text);
     cursor: pointer;
   }
 
+  button:hover {
+    background: var(--color-surface-hover);
+  }
+
   button.active {
-    background: #ddd;
+    background: var(--color-surface-active);
   }
 </style>

@@ -20,7 +20,7 @@
 <style>
   .editor {
     display: grid;
-    grid-template-columns: 64px 1fr 240px;
+    grid-template-columns: var(--toolbar-width) 1fr var(--properties-width);
     height: calc(100vh - 65px);
   }
 
@@ -30,12 +30,12 @@
     justify-content: center;
     min-width: 0;
     min-height: 0;
-    background: #eee;
+    background: var(--color-viewport);
   }
 
   .properties {
-    padding: 16px;
+    padding: var(--space-lg);
     overflow: auto;
-    border-left: 1px solid #ccc;
+    border-left: var(--border-thin);
   }
 </style>
