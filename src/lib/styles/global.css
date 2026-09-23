@@ -13,7 +13,3 @@ body {
   background: var(--color-background);
   color: var(--color-text);
 }
-
-main {
-  min-height: 100vh;
-}

@@ -5,7 +5,7 @@
   }>();
 </script>
 
-<aside class="tools">
+<aside>
   <button
     type="button"
     class:active={tool === "select"}
@@ -35,7 +35,7 @@
 </aside>
 
 <style>
-  .tools {
+  aside {
     display: flex;
     flex-direction: column;
     gap: var(--space-xs);
@@ -43,7 +43,7 @@
     border-right: var(--border-thin);
   }
 
-  .tools button {
+  aside button {
     width: 48px;
     height: 48px;
     padding: var(--space-xs);
@@ -54,11 +54,11 @@
     cursor: pointer;
   }
 
-  .tools button:hover {
+  aside button:hover {
     background: var(--color-surface-hover);
   }
 
-  .tools button.active {
+  aside button.active {
     background: var(--color-surface-active);
   }
 </style>

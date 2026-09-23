@@ -12,11 +12,17 @@
     onWorkspaceChange={(newWorkspace) => (workspace = newWorkspace)}
   />
 
-  <section>
-    {#if workspace === "editor"}
-      <Editor />
-    {:else}
-      <Calculator />
-    {/if}
-  </section>
+  {#if workspace === "editor"}
+    <Editor />
+  {:else}
+    <Calculator />
+  {/if}
 </main>
+
+<style>
+  main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+</style>
